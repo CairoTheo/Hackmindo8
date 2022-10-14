@@ -4,7 +4,91 @@ if (document.readyState == "loading") {
     ready();
   }
   
+
+  const barang = [
+    {  nama: 'Indomie Kari Ayam', tipe: 'Makanan', image: 'Images/indomieKariAyam.png', harga: "Rp.4000/pcs" },    
+    {  nama: 'Indomie Soto Mie', tipe: 'Makanan', image: 'Images/indomieSotoMie.png', harga: "Rp.4000/pcs" },        
+    {  nama: 'Indomie Ayam Bawang', tipe: 'Makanan',  image: 'Images/indomieAyamBawang.png', harga: "Rp.4000/pcs" },
+    {  nama: 'Es Teh', tipe: 'Minuman', image: 'Images/esTeh(6).png', harga: "Rp.5000/pcs" },
+    {  nama: 'Es Jeruk', tipe: 'Minuman', image: 'Images/esJeruk.png', harga: "Rp.5000/pcs" },
+    {  nama: 'Indomie Kaldu Ayam', tipe: 'Makanan',  image: 'Images/indomieKalduAyam.png', harga: "Rp.3900/pcs" },
+    {  nama: 'Indomie Seblak', tipe: 'Makanan',  image: 'Images/indomieSeblak.png', harga: "Rp.4000/pcs" },
+    {  nama: 'Indomie Goreng Original', tipe: 'Makanan',  image: 'Images/indomieGoreng.png', harga: "Rp.3100/pcs" },
+    {  nama: 'Indomie Goreng Ayam Pop', tipe: 'Makanan',  image: 'Images/indomieGorengAyamPop.png', harga: "Rp.3700/pcs" },
+    {  nama: 'Indomie Goreng Ayam Panggang Jumbo', tipe: 'Makanan',  image: 'Images/indomieGorengAyamPanggangJumbo.png', harga: "Rp.5000/pcs" },
+    {  nama: 'Indomie Bolognese', tipe: 'Makanan',  image: 'Images/indomieBolognese.png', harga: "Rp.4000/pcs" },
+    {  nama: 'Indomie Goreng Aceh', tipe: 'Makanan',  image: 'Images/indomieGorengAceh.png', harga: "Rp.3900/pcs" },
+    {  nama: 'Indomie Goreng Ayam Pop', tipe: 'Makanan',  image: 'Images/indomieGorengAyamPop.png', harga: "Rp.3700/pcs" },
+    {  nama: 'Indomie Goreng Ayam Panggang Jumbo', tipe: 'Makanan',  image: 'Images/indomieGorengAyamPanggangJumbo.png', harga: "Rp.5000/pcs" },
+    {  nama: 'Supermi Nutrimi Mie Goreng', tipe: 'Makanan',  image: 'Images/supermiNutrimiGoreng.png', harga: "Rp.6000/pcs" },
+    {  nama: 'Supermi Nutrimi Steak Ayam', tipe: 'Makanan',  image: 'Images/supermiNutrimiSteakAyam.png', harga: "Rp.6000/pcs" },
+    {  nama: 'Bandrek', tipe: 'Minuman', image: 'Images/bandrek.png', harga: "Rp.12000/pcs" },
+    {  nama: 'Le Minerale', tipe: 'Minuman', image: 'Images/leMinerale.png', harga: "Rp.5000/pcs" },
+    {  nama: 'Teh Botol', tipe: 'Minuman', image: 'Images/tehBotol.png', harga: "Rp.5500/pcs" },
+    {  nama: 'Teh Pucuk', tipe: 'Minuman', image: 'Images/tehPucuk.png', harga: "Rp.5500/pcs" },
+    {  nama: 'Teh Kotak Apel', tipe: 'Minuman', image: 'Images/tehKotakApel.png', harga: "Rp.3500/pcs" },
+    {  nama: 'FresTea Nusantara', tipe: 'Minuman', image: 'Images/fresTeaNusantara.png', harga: "Rp.6000/pcs" },
+    {  nama: 'FruitTea Freeze', tipe: 'Minuman', image: 'Images/fruitTeaFreeze.png', harga: "Rp.4500/pcs" },
+    {  nama: '>Nu Green Tea', tipe: 'Minuman', image: 'Images/nuGreenTea.png', harga: "Rp.4500/pcs" },
+    {  nama: 'Tebs', tipe: 'Minuman', image: 'Images/tebs.png', harga: "Rp.6500/pcs" },
+    {  nama: 'Adem Sari', tipe: 'Minuman', image: 'Images/ademSari.png', harga: "Rp.6000/pcs" },
+
+
+  ]
+
   function ready() {
+    let sectionmakanan = document.getElementById("sectionmakanan");
+    let makanan = `<h2 class="section-header">MAKANAN</h2>
+      <div class="shop-items">`
+    for(let i=0;i<barang.length;i++){
+      
+      if(barang[i].tipe==='Makanan'){
+        makanan += `<div class="shop-item">
+                        <span class="shop-item-title">${barang[i].nama}</span>
+                        <img class="shop-item-image" src="${barang[i].image}">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">${barang[i].harga}</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>`
+      }
+      
+    }    
+    makanan += `</div>`
+    // console.log(makanan);
+    sectionmakanan.innerHTML = makanan ; 
+
+    let sectionminuman = document.getElementById("sectionminuman");
+    let minuman = `<h2 class="section-header">MINUMAN</h2>
+      <div class="shop-items">`
+    for(let i=0;i<barang.length;i++){      
+      if(barang[i].tipe==='Minuman'){
+        minuman += `<div class="shop-item">
+                        <span class="shop-item-title">${barang[i].nama}</span>
+                        <img class="shop-item-image" src="${barang[i].image}">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">${barang[i].harga}</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>`
+      }
+      
+    }    
+    minuman += `</div>`
+    // console.log(makanan);
+    sectionminuman.innerHTML = minuman ; 
+
+
+
+
+    
+
+    
+
+
+
+
+
     var removeCartItemButtons = document.getElementsByClassName("btn-danger");
     for (var i = 0; i < removeCartItemButtons.length; i++) {
       var button = removeCartItemButtons[i];
