@@ -7,6 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    background-color: lightblue;
 }
 
 .nav ul {
@@ -147,7 +148,7 @@ html, body {
 }
 
 .shop-item {
-    margin: 30px;
+    margin: 20px;
 }
 
 .shop-item-title {
@@ -282,3 +283,22 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+.descindex {
+    background: -webkit-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #077237 60%, #850b25 60%);
+    background: -o-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #077237 60%, #850b25 60%);
+    background: -moz-linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #077237 60%, #850b25 60%);
+    background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #077237 60%, #850b25 60%);
+    
+}
+
+.textdescindex{
+    
+    color: #000;
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    
+    
+}
+
