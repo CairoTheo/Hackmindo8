@@ -55,7 +55,7 @@ html, body {
     font-weight: normal;
     color: white;
 }
-
+-he
 .hackmindo8-name-large {
     font-size: 8em;
 }
@@ -73,8 +73,8 @@ html, body {
     font-weight: normal;
     color: rgb(28, 138, 86);
     text-align: center;
-    font-weight: 900;    
-    font-size: 4.5em;
+    font-size: 2.5em;
+
 }
 
 .main-footer {
@@ -151,6 +151,20 @@ html, body {
 
 .shop-item {
     margin: 20px;
+}
+
+.center{
+    display: flex;
+    margin: 30px;
+    text-align: center;
+}
+
+.modal{
+    display: none;
+}
+
+#hidden{
+    display: none;
 }
 
 .shop-item-title {

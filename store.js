@@ -194,3 +194,13 @@ if (document.readyState == "loading") {
     document.getElementsByClassName("cart-total-price")[0].innerText =
       "Rp" + total;
   }
+
+
+function purchaseClicked() {
+  var cartItems = document.getElementsByClassName("cart-items")[0];
+  updateCartTotal();
+  document.getElementById("hidden").style.display = "block";
+  
+  
+}
+
