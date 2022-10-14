@@ -9,7 +9,7 @@ const barang = [
   {  nama: 'Indomie Kari Ayam', tipe: 'Makanan', image: 'Images/indomieKariAyam.png', harga: "Rp.4000/pcs" },    
   {  nama: 'Indomie Soto Mie', tipe: 'Makanan', image: 'Images/indomieSotoMie.png', harga: "Rp.4000/pcs" },        
   {  nama: 'Indomie Ayam Bawang', tipe: 'Makanan',  image: 'Images/indomieAyamBawang.png', harga: "Rp.4000/pcs" },
-  {  nama: 'Es Teh', tipe: 'Minuman', image: 'Images/esTeh(6).png', harga: "Rp.5000/pcs" },
+  {  nama: 'Es Teh', tipe: 'Minuman', image: 'Images/esteh.jpg', harga: "Rp.5000/pcs" },
   {  nama: 'Es Jeruk', tipe: 'Minuman', image: 'Images/esJeruk.png', harga: "Rp.5000/pcs" },
   {  nama: 'Indomie Kaldu Ayam', tipe: 'Makanan',  image: 'Images/indomieKalduAyam.png', harga: "Rp.3900/pcs" },
   {  nama: 'Indomie Seblak', tipe: 'Makanan',  image: 'Images/indomieSeblak.png', harga: "Rp.4000/pcs" },
@@ -39,7 +39,7 @@ const barang = [
   {  nama: 'Bakso Ikan isi Keju', tipe: 'Topping', image: 'Images/cedeaFishDumplingCheese.png', harga: "Rp.2500/pcs" },
   {  nama: 'Bakso Ikan isi Ayam', tipe: 'Topping', image: 'Images/cedeaFishDumplingChicken.png', harga: "Rp.2500/pcs" },
   {  nama: 'Bakso Lobster', tipe: 'Topping', image: 'Images/cedeaLobsterBall.png', harga: "Rp.2500/pcs" },
-  {  nama: 'Bakso Ikan Udang', tipe: 'Topping', image: 'Images/cedeaSalmonBall.png', harga: "Rp.2500/pcs" },
+  
   
 
 
@@ -108,9 +108,6 @@ function ready() {
   sectiontopping.innerHTML = topping ; 
 
 
-
-
-  
 
   
 
